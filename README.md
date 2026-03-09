@@ -16,3 +16,6 @@
 Леонтієва Софія
 Брик Тетяна
 Ткач Ольга
+
+
+Figma: (https://www.figma.com/design/gfpvI6Hth7PEypTVHhwhJ2/MagicHub?node-id=0-1&t=Ik7A9GybAwXYwQSz-1)
