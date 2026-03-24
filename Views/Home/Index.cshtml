@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "MysticHub";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <header class="header-page">
+        <div class="container header-container">
+            <a href="/" class="logo">MysticHub</a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link current">Головна</a></li>
+                    <li><a href="#" class="nav-link">Гороскоп</a></li>
+                    <li><a href="#" class="nav-link">Сумісність</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="card-wrapper">
+                    <div class="fortune-card" id="fortuneCard">
+                        <div class="card-side card-front">
+                            <img
+                                src="/images/img1@1x.jpg"
+                                srcset="/images/img1@1x.jpg 1x, /images/img1@2x.jpg 2x"
+                                alt="Містична карта"
+                                class="card-image"
+                                width="379"
+                                height="650" />
+                        </div>
+
+                        <div class="card-side card-back">
+                            <p class="prediction-text">
+                                @ViewBag.PredictionText
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-text-wrap">
+                    <h1 class="hero-title">
+                        Натисни на карту та відкрий своє передбачення на сьогодні
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <h2 class="footer-title">Соціальні мережі:</h2>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" width="40" height="40">
+                                <use href="/images/icons.svg#icon-Instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" width="40" height="40">
+                                <use href="/images/icons.svg#icon-Facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" width="40" height="40">
+                                <use href="/images/icons.svg#icon-Twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">Номер телефону:</h2>
+                <address class="footer-address">
+                    <ul class="footer-contact-list">
+                        <li>
+                            <a href="tel:+380981717171" class="footer-text">+380981717171</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380981234567" class="footer-text">+380981234567</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">Освіта:</h2>
+                <p class="footer-text footer-center-text">
+                    Львівський національний університет імені Івана Франка
+                </p>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">Команда:</h2>
+                <ul class="team-list">
+                    <li class="footer-text">Брик Тетяна</li>
+                    <li class="footer-text">Ткач Ольга</li>
+                    <li class="footer-text">Леонтієва Софія</li>
+                    <li class="footer-text">Коблянська Андріана</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const fortuneCard = document.getElementById('fortuneCard');
+
+        if (fortuneCard) {
+            fortuneCard.addEventListener('click', function () {
+                fortuneCard.classList.toggle('is-flipped');
+            });
+        }
+    </script>
+</body>
+</html>
