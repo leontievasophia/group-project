@@ -87,3 +87,4 @@ MysticHub — це веб-сервіс, який надає користувач
 
 Figma: (https://www.figma.com/design/gfpvI6Hth7PEypTVHhwhJ2/MagicHub?node-id=0-1&t=Ik7A9GybAwXYwQSz-1)
 >>>>>>> deee207007f2929096378ada206e39ee24ba3b3f
+>>>>>>> New: https://www.figma.com/design/pssOaHBuaTedzYQcwGIB8J/MysticHub-Part2?node-id=0-1&t=1UeKeAPfJ9LOYLpe-1
