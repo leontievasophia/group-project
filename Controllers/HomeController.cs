@@ -14,5 +14,10 @@ namespace group_project.Controllers
 
             return View();
         }
+
+        public IActionResult Horoscope()
+        {
+            return View();
+        }
     }
 }

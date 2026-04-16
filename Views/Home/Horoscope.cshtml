@@ -1,5 +1,5 @@
-﻿@{
-    ViewData["Title"] = "MysticHub";
+@{
+    ViewData["Title"] = "Гороскоп";
     Layout = null;
 }
 
@@ -32,20 +32,14 @@
                 <ul class="nav-list">
 
                     <li>
-                        <a asp-controller="Home" asp-action="Index" class="nav-link current">
+                        <a asp-controller="Home" asp-action="Index" class="nav-link">
                             Головна
                         </a>
                     </li>
 
                     <li>
-                        <a asp-controller="Home" asp-action="Horoscope" class="nav-link">
+                        <a asp-controller="Home" asp-action="Horoscope" class="nav-link current">
                             Гороскоп
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link">
-                            Сумісність
                         </a>
                     </li>
 
@@ -57,36 +51,80 @@
 
 
     <main class="main-page">
-        <section class="hero-section">
-            <div class="container hero-container">
+        <section class="horoscope-section">
+            <div class="container">
 
-                <div class="card-wrapper">
-                    <div class="fortune-card" id="fortuneCard">
+                <h1 class="horoscope-title">
+                    Дізнайся, що підготували для тебе зорі
+                </h1>
 
-                        <div class="card-side card-front">
-                            <img
-                                src="/images/img1@1x.jpg"
-                                srcset="/images/img1@1x.jpg 1x, /images/img1@2x.jpg 2x"
-                                alt="Містична карта"
-                                class="card-image"
-                                width="379"
-                                height="650" />
-                        </div>
+                <p class="horoscope-subtitle">
+                    Обери свій знак зодіаку
+                </p>
 
-                        <div class="card-side card-back">
-                            <p class="prediction-text">
-                                @ViewBag.PredictionText
-                            </p>
-                        </div>
+                <ul class="zodiac-grid">
 
-                    </div>
-                </div>
+                    <li class="zodiac-card">
+                        <p>Овен</p>
+                        <img src="/images/aries.jpg" alt="Овен">
+                    </li>
 
-                <div class="hero-text-wrap">
-                    <h1 class="hero-title">
-                        Натисни на карту та відкрий своє передбачення на сьогодні
-                    </h1>
-                </div>
+                    <li class="zodiac-card">
+                        <p>Телець</p>
+                        <img src="/images/taurus.jpg" alt="Телець">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Близнюки</p>
+                        <img src="/images/gemini.jpg" alt="Близнюки">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Рак</p>
+                        <img src="/images/cancer.jpg" alt="Рак">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Лев</p>
+                        <img src="/images/leo.jpg" alt="Лев">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Діва</p>
+                        <img src="/images/virgo.jpg" alt="Діва">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Терези</p>
+                        <img src="/images/libra.jpg" alt="Терези">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Скорпіон</p>
+                        <img src="/images/scorpio.jpg" alt="Скорпіон">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Стрілець</p>
+                        <img src="/images/sagittarius.jpg" alt="Стрілець">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Козеріг</p>
+                        <img src="/images/capricorn.jpg" alt="Козеріг">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Водолій</p>
+                        <img src="/images/aquarius.jpg" alt="Водолій">
+                    </li>
+
+                    <li class="zodiac-card">
+                        <p>Риби</p>
+                        <img src="/images/pisces.jpg" alt="Риби">
+                    </li>
+
+                </ul>
 
             </div>
         </section>
@@ -134,7 +172,6 @@
 
                 <address class="footer-address">
                     <ul class="footer-contact-list">
-
                         <li>
                             <a href="tel:+380981717171" class="footer-text">
                                 +380981717171
@@ -146,7 +183,6 @@
                                 +380981234567
                             </a>
                         </li>
-
                     </ul>
                 </address>
             </div>
@@ -174,17 +210,5 @@
 
         </div>
     </footer>
-
-
-    <script>
-        const fortuneCard = document.getElementById('fortuneCard');
-
-        if (fortuneCard) {
-            fortuneCard.addEventListener('click', function () {
-                fortuneCard.classList.toggle('is-flipped');
-            });
-        }
-    </script>
-
 </body>
 </html>
