@@ -1,295 +1,343 @@
 {
   "Files": [
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\group-project.bundle.scp.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\group-project.bundle.scp.css",
       "PackagePath": "staticwebassets\\group-project.d0jzhw8wxq.bundle.scp.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\Facebook.svg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\Facebook.svg",
       "PackagePath": "staticwebassets\\images\\Facebook.svg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\Instagram.svg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\Instagram.svg",
       "PackagePath": "staticwebassets\\images\\Instagram.svg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\Twitter.svg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\Twitter.svg",
       "PackagePath": "staticwebassets\\images\\Twitter.svg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\icons.svg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\aquarius.jpg",
+      "PackagePath": "staticwebassets\\images\\aquarius.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\aries.jpg",
+      "PackagePath": "staticwebassets\\images\\aries.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\cancer.jpg",
+      "PackagePath": "staticwebassets\\images\\cancer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\capricorn.jpg",
+      "PackagePath": "staticwebassets\\images\\capricorn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\gemini.jpg",
+      "PackagePath": "staticwebassets\\images\\gemini.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\icons.svg",
       "PackagePath": "staticwebassets\\images\\icons.svg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\img1@1x.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\img1@1x.jpg",
       "PackagePath": "staticwebassets\\images\\img1@1x.jpg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\img1@2x.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\img1@2x.jpg",
       "PackagePath": "staticwebassets\\images\\img1@2x.jpg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\img2.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\img2.jpg",
       "PackagePath": "staticwebassets\\images\\img2.jpg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\images\\img3.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\img3.jpg",
       "PackagePath": "staticwebassets\\images\\img3.jpg"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\leo.jpg",
+      "PackagePath": "staticwebassets\\images\\leo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\libra.jpg",
+      "PackagePath": "staticwebassets\\images\\libra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\pisces.jpg",
+      "PackagePath": "staticwebassets\\images\\pisces.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\sagittarius.jpg",
+      "PackagePath": "staticwebassets\\images\\sagittarius.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\scorpio.jpg",
+      "PackagePath": "staticwebassets\\images\\scorpio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\taurus.jpg",
+      "PackagePath": "staticwebassets\\images\\taurus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\images\\virgo.jpg",
+      "PackagePath": "staticwebassets\\images\\virgo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "D:\\2 курс програмування\\с#\\навчально обчислювальна практика\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {

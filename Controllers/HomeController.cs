@@ -5,12 +5,14 @@ using group_project.Models;
 namespace group_project.Controllers
 {
     public class HomeController : Controller
-    private readonly HoroscopeService _horoscopeService;
-    public HomeController(HoroscopeService horoscopeService)
-{
-    _horoscopeService = horoscopeService;
-}
     {
+        private readonly HoroscopeService _horoscopeService;
+
+        public HomeController(HoroscopeService horoscopeService)
+        {
+            _horoscopeService = horoscopeService;
+        }
+
         public IActionResult Index()
         {
             var predictionService = new Prediction();
@@ -25,16 +27,17 @@ namespace group_project.Controllers
         {
             return View();
         }
-    }
-    public IActionResult HoroscopeDetails(string sign)
-{
-    var horoscope = _horoscopeService.GetHoroscope(sign);
 
-    if (horoscope == null)
-    {
-        return RedirectToAction("Horoscope");
-    }
+        public IActionResult HoroscopeDetails(string sign)
+        {
+            var horoscope = _horoscopeService.GetHoroscope(sign);
 
-    return View(horoscope);
-}
+            if (horoscope == null)
+            {
+                return RedirectToAction("Horoscope");
+            }
+
+            return View(horoscope);
+        }
+    }
 }
