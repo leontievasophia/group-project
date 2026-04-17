@@ -127,7 +127,6 @@ C:\Users\user\Desktop\group-project\obj\Debug\net9.0\scopedcss\Views\Shared\_Lay
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\scopedcss\bundle\group-project.styles.css
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\scopedcss\projectbundle\group-project.bundle.scp.css
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\jwjvvf5kyi-b9sayid5wm.gz
-C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\43k31n2xij-x4yh6pjg4r.gz
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\c8v9tnsklt-61n19gt1b8.gz
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\23lbw0q2y8-6nokcza2ac.gz
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\7uvs3ekrb0-rgi5nsco3e.gz
@@ -206,3 +205,4 @@ C:\Users\user\Desktop\group-project\obj\Debug\net9.0\staticwebassets\msbuild.bui
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\group-project.genruntimeconfig.cache
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\ref\group-project.dll
+C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\43k31n2xij-vqr938wugj.gz
