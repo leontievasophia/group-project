@@ -6,5 +6,6 @@ namespace group_project.Models
         public string SignName { get; set; }
         public string ImagePath { get; set; }
         public string HoroscopeText { get; set; }
+        public string DateRange { get; set; }
     }
 }
