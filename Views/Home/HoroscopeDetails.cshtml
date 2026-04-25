@@ -29,16 +29,29 @@
 
     <main class="one-horoscope-main">
         <section class="one-horoscope-section">
-            <div class="one-horoscope-top">
-                <img src="@Model.ImagePath" alt="@Model.SignName" class="one-horoscope-icon" />
 
-                <h1 class="one-horoscope-title">
-    @Model.SignName <span>(@Model.DateRange)</span>
-</h1>
+            <div class="one-horoscope-top">
+                <img src="@Model.ImagePath"
+                     alt="@Model.SignName"
+                     class="one-horoscope-icon" />
+
+                <div class="one-horoscope-title-block">
+                    <h1 class="one-horoscope-title">
+                        @Model.SignName
+                    </h1>
+
+                    <p class="one-horoscope-date">
+                        (@Model.DateRange)
+                    </p>
+                </div>
             </div>
 
             <div class="one-horoscope-card">
-                <p>
+                <h2 class="prediction-title">
+                    Передбачення
+                </h2>
+
+                <p class="prediction-text">
                     @Model.HoroscopeText
                 </p>
             </div>
@@ -46,6 +59,7 @@
             <a asp-controller="Home" asp-action="Horoscope" class="one-horoscope-back">
                 Назад до гороскопів
             </a>
+
         </section>
     </main>
 </body>
