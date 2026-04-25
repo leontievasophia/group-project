@@ -1,17 +1,53 @@
 @model group_project.Models.HoroscopeInfo
 
-<div class="horoscope-details">
-    <div class="horoscope-details-card">
-        <h1 class="horoscope-details-title">@Model.SignName</h1>
+@{
+    Layout = null;
+    ViewData["Title"] = Model.SignName;
+}
 
-        <img src="@Model.ImagePath" alt="@Model.SignName" class="horoscope-details-image" />
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
 
-        <p class="horoscope-details-text">
-            @Model.HoroscopeText
-        </p>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
 
-        <a asp-controller="Home" asp-action="Horoscope" class="horoscope-details-button">
-            Назад до гороскопів
+<body class="horoscope-details-page">
+    <header class="details-header">
+        <a asp-controller="Home" asp-action="Index" class="details-logo">
+            MysticHub
         </a>
-    </div>
-</div>
+
+        <nav class="details-nav">
+            <a asp-controller="Home" asp-action="Index">Головна</a>
+            <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
+            <a href="#">Сумісність</a>
+        </nav>
+    </header>
+
+    <main class="details-main">
+        <section class="details-hero">
+            <div class="details-top">
+                <img src="@Model.ImagePath" alt="@Model.SignName" class="details-zodiac-image" />
+
+                <h1 class="details-title">
+                    @Model.SignName
+                </h1>
+            </div>
+
+            <div class="details-text-card">
+                <p>
+                    @Model.HoroscopeText
+                </p>
+            </div>
+
+            <a asp-controller="Home" asp-action="Horoscope" class="details-back-button">
+                Назад до гороскопів
+            </a>
+        </section>
+    </main>
+</body>
+</html>
