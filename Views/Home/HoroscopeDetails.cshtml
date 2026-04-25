@@ -11,40 +11,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-
     <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
-<body class="horoscope-details-page">
-    <header class="details-header">
-        <a asp-controller="Home" asp-action="Index" class="details-logo">
+<body class="one-horoscope-page">
+    <header class="one-horoscope-header">
+        <a asp-controller="Home" asp-action="Index" class="one-horoscope-logo">
             MysticHub
         </a>
 
-        <nav class="details-nav">
+        <nav class="one-horoscope-nav">
             <a asp-controller="Home" asp-action="Index">Головна</a>
             <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
             <a href="#">Сумісність</a>
         </nav>
     </header>
 
-    <main class="details-main">
-        <section class="details-hero">
-            <div class="details-top">
-                <img src="@Model.ImagePath" alt="@Model.SignName" class="details-zodiac-image" />
+    <main class="one-horoscope-main">
+        <section class="one-horoscope-section">
+            <div class="one-horoscope-top">
+                <img src="@Model.ImagePath" alt="@Model.SignName" class="one-horoscope-icon" />
 
-                <h1 class="details-title">
+                <h1 class="one-horoscope-title">
                     @Model.SignName
                 </h1>
             </div>
 
-            <div class="details-text-card">
+            <div class="one-horoscope-card">
                 <p>
                     @Model.HoroscopeText
                 </p>
             </div>
 
-            <a asp-controller="Home" asp-action="Horoscope" class="details-back-button">
+            <a asp-controller="Home" asp-action="Horoscope" class="one-horoscope-back">
                 Назад до гороскопів
             </a>
         </section>
