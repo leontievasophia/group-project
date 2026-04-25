@@ -753,3 +753,11 @@ margin-top:15px;
 .one-horoscope-back:hover {
     text-decoration: underline;
 }
+.one-horoscope-icon{
+width:180px;
+height:180px;
+display:block;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 0 30px rgba(232,205,98,.8);
+}
