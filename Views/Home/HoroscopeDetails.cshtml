@@ -3,102 +3,65 @@
 @{
     Layout = null;
     ViewData["Title"] = Model.SignName;
+    var imagePath = "/images/" + Model.SignKey + ".jpg";
 }
 
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>@ViewData["Title"]</title>
-
-<link rel="stylesheet"
-href="/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body class="one-horoscope-page">
+    <header class="one-horoscope-header">
+        <a asp-controller="Home" asp-action="Index" class="one-horoscope-logo">
+            MysticHub
+        </a>
 
-<header class="one-horoscope-header">
+        <nav class="one-horoscope-nav">
+            <a asp-controller="Home" asp-action="Index">Головна</a>
+            <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
+            <a href="#">Сумісність</a>
+        </nav>
+    </header>
 
-<a asp-controller="Home"
-asp-action="Index"
-class="one-horoscope-logo">
-MysticHub
-</a>
+    <main class="one-horoscope-main">
+        <section class="one-horoscope-section">
 
-<nav class="one-horoscope-nav">
-<a asp-controller="Home"
-asp-action="Index">
-Головна
-</a>
+            <div class="one-horoscope-top">
+                <img
+                    src="@imagePath"
+                    alt="@Model.SignName"
+                    class="one-horoscope-icon"
+                />
 
-<a asp-controller="Home"
-asp-action="Horoscope">
-Гороскоп
-</a>
+                <div class="one-horoscope-title-block">
+                    <h1 class="one-horoscope-title">
+                        @Model.SignName
+                    </h1>
 
-<a href="#">
-Сумісність
-</a>
-</nav>
+                    <p class="one-horoscope-date">
+                        (@Model.DateRange)
+                    </p>
+                </div>
+            </div>
 
-</header>
+            <div class="one-horoscope-card">
+                
 
+                <p class="prediction-text">
+                    @Model.HoroscopeText
+                </p>
+            </div>
 
-<main class="one-horoscope-main">
+            <a asp-controller="Home" asp-action="Horoscope" class="one-horoscope-back">
+                Назад до гороскопів
+            </a>
 
-<section class="one-horoscope-section">
-
-<div class="one-horoscope-top">
-
-<!-- ТЕСТОВО жорстко підставили картинку -->
-<img
-src="@Model.ImagePath"
-alt="@Model.SignName"
-class="one-horoscope-icon"
-/>
-
-<div class="one-horoscope-title-block">
-
-<h1 class="one-horoscope-title">
-@Model.SignName
-</h1>
-
-<p class="one-horoscope-date">
-(@Model.DateRange)
-</p>
-
-</div>
-
-</div>
-
-
-<div class="one-horoscope-card">
-
-<h2 class="prediction-title">
-Передбачення
-</h2>
-
-<p class="prediction-text">
-@Model.HoroscopeText
-</p>
-
-</div>
-
-
-<a asp-controller="Home"
-asp-action="Horoscope"
-class="one-horoscope-back">
-
-Назад до гороскопів
-
-</a>
-
-</section>
-
-</main>
-
+        </section>
+    </main>
 </body>
 </html>
