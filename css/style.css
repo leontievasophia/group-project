@@ -1,0 +1,142 @@
+:root {
+  --dark-bg: #0B0E14;
+  --gold: #E7C57E;
+  --purple: #2C1463;
+  --light-gold: #F4D391;
+  --main-bg: url('../assets/background.png'); /* Додаємо шлях сюди */
+}
+
+body {
+  background-color: var(--dark-bg);
+  background-image: var(--main-bg) !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/* Стилізуємо шапку (золота смужка) */
+.navbar {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    color: black;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* Головний контент */
+.main-content {
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+/* Стиль для контейнера з полями вводу */
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+/* Фіолетові інпути з Figma */
+input[type="text"] {
+    background-color: var(--purple);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Велика золота кнопка */
+.btn-check {
+    background-color: var(--gold);
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-check:hover {
+    transform: scale(1.05); /* Ефект при наведенні */
+}
+
+/* Декорація (Сонце) */
+.sun-decoration {
+    margin-top: 50px;
+}
+
+.sun-decoration img {
+    width: 150px; /* Налаштуйте розмір під себе */
+}
+/* Текст-підказка */
+.click-hint {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white; /* Змінили з золотистого на білий */
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Додамо легку тінь, щоб текст краще читався на зірках */
+}
+
+/* Кнопка-сонце */
+.sun-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    outline: none;
+}
+
+.sun-button img {
+    width: 180px; /* Трохи збільшимо для зручності */
+    display: block;
+}
+
+/* Ефекти при наведенні */
+.sun-button:hover {
+    transform: scale(1.1) rotate(5deg); /* Сонце трохи збільшується і повертається */
+    filter: drop-shadow(0 0 15px var(--gold)); /* Додаємо сяйво */
+}
+
+.sun-button:active {
+    transform: scale(0.95); /* Ефект натискання */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MysticHub</title>
+    
+    <!-- Підключаємо файл стилів із папки css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Верхня панель (Header) -->
+    <header class="navbar">
+        <div class="logo">MysticHub</div>
+        <nav class="menu">
+            <a href="#">Головна</a>
+            <a href="#">Гороскоп</a>
+            <a href="#">Сумісність</a>
+        </nav>
+    </header>
+
+    <!-- Головний блок -->
+    <main class="main-content">
+        <h1>Дізнайся сумісність ваших імен</h1>
+        <p class="subtitle">Введіть два імені та відкрийте, наскільки ви підходите одне одному</p>
+
+        <div class="input-group">
+            <div class="input-field">
+                <label>Введіть ім'я</label>
+                <input type="text" id="name1" placeholder="Ім'я 1">
+            </div>
+            <div class="input-field">
+                <label>Введіть ім'я</label>
+                <input type="text" id="name2" placeholder="Ім'я 2">
+            </div>
+        </div>
+
+        <!-- Тепер текст — це просто підказка над кнопкою-сонцем -->
+        <p class="click-hint">Тисни кнопку і дізнаєшся сумісність</p>
+
+        <!-- Сонце тепер і є кнопкою -->
+        <button class="sun-button" onclick="checkCompatibility()">
+            <img src="assets/sun.png" alt="Sun">
+        </button>
+    </main>
+</body>
+</html>
