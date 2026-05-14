@@ -7,8 +7,7 @@ namespace group_project.Controllers
     {
         public IActionResult Index()
         {
-            var predictionService = new Prediction();
-            string prediction = predictionService.GetRandomPrediction();
+            string prediction = Prediction.GetRandomPrediction();
 
             ViewBag.PredictionText = prediction;
 
@@ -19,5 +18,25 @@ namespace group_project.Controllers
         {
             return View();
         }
+<<<<<<< Updated upstream
+=======
+
+        public IActionResult Compatibility()
+        {
+            return View();
+        }
+
+        public IActionResult HoroscopeDetails(string sign)
+        {
+            var horoscope = _horoscopeService.GetHoroscope(sign);
+
+            if (horoscope == null)
+            {
+                return RedirectToAction("Horoscope");
+            }
+
+            return View(horoscope);
+        }
+>>>>>>> Stashed changes
     }
 }

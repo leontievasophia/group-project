@@ -1,27 +1,4 @@
-﻿@{
-    ViewData["Title"] = "MysticHub";
-    Layout = null;
-}
-
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="/css/styles.css" />
-</head>
-
-<body>
-    <header class="header-page">
+<header class="header-page">
         <div class="container header-container">
 
             <a asp-controller="Home" asp-action="Index" class="logo">
@@ -44,9 +21,7 @@
                     </li>
 
                     <li>
-                        <a asp-controller="Home"
-   asp-action="Compatibility"
-   class="nav-link">
+                        <a href="#" class="nav-link">
                             Сумісність
                         </a>
                     </li>
@@ -187,6 +162,3 @@
             });
         }
     </script>
-
-</body>
-</html>
