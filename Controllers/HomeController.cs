@@ -1,3 +1,4 @@
+using group_project.Services;
 using Microsoft.AspNetCore.Mvc;
 using group_project.Models;
 
@@ -5,9 +6,17 @@ namespace group_project.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly HoroscopeService _horoscopeService;
+
+        public HomeController(HoroscopeService horoscopeService)
+        {
+            _horoscopeService = horoscopeService;
+        }
+
         public IActionResult Index()
         {
-            string prediction = Prediction.GetRandomPrediction();
+            var predictionService = new Prediction();
+            string prediction = predictionService.GetRandomPrediction();
 
             ViewBag.PredictionText = prediction;
 
@@ -15,13 +24,6 @@ namespace group_project.Controllers
         }
 
         public IActionResult Horoscope()
-        {
-            return View();
-        }
-<<<<<<< Updated upstream
-=======
-
-        public IActionResult Compatibility()
         {
             return View();
         }
@@ -37,6 +39,5 @@ namespace group_project.Controllers
 
             return View(horoscope);
         }
->>>>>>> Stashed changes
     }
 }

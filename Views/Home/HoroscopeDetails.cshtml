@@ -10,23 +10,125 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: url('/images/img2.jpg') center/cover no-repeat;
+            font-family: Georgia, serif;
+            color: #f5df8e;
+        }
+
+        .one-horoscope-header {
+            height: 80px;
+            background: #d9c168;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .one-horoscope-logo {
+            font-size: 34px;
+            font-weight: bold;
+            color: #210080;
+            text-decoration: none;
+        }
+
+        .one-horoscope-nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        .one-horoscope-nav a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #210080;
+            text-decoration: none;
+        }
+
+        .one-horoscope-main {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            justify-content: center;
+            padding-top: 90px;
+        }
+
+        .one-horoscope-section {
+            width: 1100px;
+        }
+
+        .one-horoscope-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 70px;
+        }
+
+        .one-horoscope-icon {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 35px #e3ca62;
+        }
+
+        .one-horoscope-title {
+            font-size: 64px;
+            margin: 0;
+            color: #f5d65f;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .one-horoscope-date {
+            font-size: 34px;
+            margin: 15px 0 0;
+            color: #f5d65f;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .one-horoscope-card {
+            width: 900px;
+            min-height: 170px;
+            margin: 0 auto;
+            background: #37106f;
+            border-radius: 35px;
+            padding: 45px 60px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        .prediction-text {
+            margin: 0;
+            font-size: 26px;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #f5d65f;
+        }
+
+        .one-horoscope-back {
+            display: block;
+            text-align: center;
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #f5d65f;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
-<body class="one-horoscope-page">
+<body>
     <header class="one-horoscope-header">
-        <a asp-controller="Home" asp-action="Index" class="one-horoscope-logo">
-            MysticHub
-        </a>
+        <a asp-controller="Home" asp-action="Index" class="one-horoscope-logo">MysticHub</a>
 
         <nav class="one-horoscope-nav">
             <a asp-controller="Home" asp-action="Index">Головна</a>
             <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
-            <a asp-controller="Home"
-   asp-action="Compatibility"
-   class="nav-link">Сумісність</a>
+            <a asp-controller="Home" asp-action="Compatibility">Сумісність</a>
         </nav>
     </header>
 
@@ -34,29 +136,16 @@
         <section class="one-horoscope-section">
 
             <div class="one-horoscope-top">
-                <img
-                    src="@imagePath"
-                    alt="@Model.SignName"
-                    class="one-horoscope-icon"
-                />
+                <img src="@imagePath" alt="@Model.SignName" class="one-horoscope-icon" />
 
-                <div class="one-horoscope-title-block">
-                    <h1 class="one-horoscope-title">
-                        @Model.SignName
-                    </h1>
-
-                    <p class="one-horoscope-date">
-                        (@Model.DateRange)
-                    </p>
+                <div>
+                    <h1 class="one-horoscope-title">@Model.SignName</h1>
+                    <p class="one-horoscope-date">(@Model.DateRange)</p>
                 </div>
             </div>
 
             <div class="one-horoscope-card">
-                
-
-                <p class="prediction-text">
-                    @Model.HoroscopeText
-                </p>
+                <p class="prediction-text">@Model.HoroscopeText</p>
             </div>
 
             <a asp-controller="Home" asp-action="Horoscope" class="one-horoscope-back">
