@@ -28,6 +28,11 @@ namespace group_project.Controllers
             return View();
         }
 
+        public IActionResult Compatibility()
+        {
+            return View();
+        }
+
         public IActionResult HoroscopeDetails(string sign)
         {
             var horoscope = _horoscopeService.GetHoroscope(sign);

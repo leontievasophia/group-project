@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\group-project.d0jzhw8wxq.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\assets\\background.png",
+      "PackagePath": "staticwebassets\\assets\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\assets\\sun.png",
+      "PackagePath": "staticwebassets\\assets\\sun.png"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\group-project\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

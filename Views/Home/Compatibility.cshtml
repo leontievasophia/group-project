@@ -1,164 +1,198 @@
-<header class="header-page">
-        <div class="container header-container">
+@{
+    Layout = null;
+    ViewData["Title"] = "Сумісність";
+}
 
-            <a asp-controller="Home" asp-action="Index" class="logo">
-                MysticHub
-            </a>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сумісність</title>
 
-            <nav class="nav">
-                <ul class="nav-list">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url('/assets/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Georgia, serif;
+            color: #f5e6bd;
+        }
 
-                    <li>
-                        <a asp-controller="Home" asp-action="Index" class="nav-link current">
-                            Головна
-                        </a>
-                    </li>
+        .compatibility-header {
+            height: 70px;
+            background-color: #d8bd4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+        }
 
-                    <li>
-                        <a asp-controller="Home" asp-action="Horoscope" class="nav-link">
-                            Гороскоп
-                        </a>
-                    </li>
+        .compatibility-logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #061136;
+            text-decoration: none;
+        }
 
-                    <li>
-                        <a href="#" class="nav-link">
-                            Сумісність
-                        </a>
-                    </li>
+        .compatibility-nav {
+            display: flex;
+            gap: 45px;
+        }
 
-                </ul>
-            </nav>
+        .compatibility-nav a {
+            color: #061136;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-        </div>
+        .compatibility-main {
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        .compatibility-title {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #f5e6bd;
+        }
+
+        .compatibility-subtitle {
+            font-size: 22px;
+            margin-bottom: 45px;
+            color: #f5e6bd;
+        }
+
+        .compatibility-form {
+            display: flex;
+            justify-content: center;
+            gap: 130px;
+            margin-bottom: 50px;
+        }
+
+        .compatibility-field label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #f2cd4d;
+        }
+
+        .compatibility-field input {
+            width: 220px;
+            height: 45px;
+            background-color: #35106f;
+            border: none;
+            outline: none;
+            color: #f2cd4d;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .compatibility-hint {
+            font-size: 18px;
+            color: #f5e6bd;
+            margin-bottom: 25px;
+        }
+
+        .sun-button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .sun-button img {
+            width: 155px;
+            height: auto;
+        }
+
+        .result-box {
+            display: none;
+            margin: 30px auto 0;
+            background-color: #35106f;
+            color: #f2cd4d;
+            width: 420px;
+            padding: 25px;
+            border-radius: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="compatibility-header">
+        <a asp-controller="Home" asp-action="Index" class="compatibility-logo">
+            MysticHub
+        </a>
+
+        <nav class="compatibility-nav">
+            <a asp-controller="Home" asp-action="Index">Головна</a>
+            <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
+            <a asp-controller="Home" asp-action="Compatibility">Сумісність</a>
+        </nav>
     </header>
 
+    <main class="compatibility-main">
+        <h1 class="compatibility-title">
+            Дізнайся сумісність ваших імен
+        </h1>
 
-    <main class="main-page">
-        <section class="hero-section">
-            <div class="container hero-container">
+        <p class="compatibility-subtitle">
+            Введіть два імені та відкрийте, наскільки ви підходите одне одному
+        </p>
 
-                <div class="card-wrapper">
-                    <div class="fortune-card" id="fortuneCard">
-
-                        <div class="card-side card-front">
-                            <img
-                                src="/images/img1@1x.jpg"
-                                srcset="/images/img1@1x.jpg 1x, /images/img1@2x.jpg 2x"
-                                alt="Містична карта"
-                                class="card-image"
-                                width="379"
-                                height="650" />
-                        </div>
-
-                        <div class="card-side card-back">
-                            <p class="prediction-text">
-                                @ViewBag.PredictionText
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="hero-text-wrap">
-                    <h1 class="hero-title">
-                        Натисни на карту та відкрий своє передбачення на сьогодні
-                    </h1>
-                </div>
-
+        <div class="compatibility-form">
+            <div class="compatibility-field">
+                <label for="firstName">Введіть ім'я</label>
+                <input type="text" id="firstName" />
             </div>
-        </section>
+
+            <div class="compatibility-field">
+                <label for="secondName">Введіть ім'я</label>
+                <input type="text" id="secondName" />
+            </div>
+        </div>
+
+        <p class="compatibility-hint">
+            Тисни кнопку і дізнаєшся сумісність
+        </p>
+
+        <button class="sun-button" onclick="calculateCompatibility()">
+            <img src="/assets/sun.png" alt="Сонце" />
+        </button>
+
+        <div id="resultBox" class="result-box"></div>
     </main>
 
-
-    <footer class="footer">
-        <div class="container footer-container">
-
-            <div class="footer-item">
-                <h2 class="footer-title">Соціальні мережі:</h2>
-
-                <ul class="social-list">
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="40" height="40">
-                                <use href="/images/icons.svg#icon-Instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="40" height="40">
-                                <use href="/images/icons.svg#icon-Facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <svg class="social-icon" width="40" height="40">
-                                <use href="/images/icons.svg#icon-Twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-
-            <div class="footer-item">
-                <h2 class="footer-title">Номер телефону:</h2>
-
-                <address class="footer-address">
-                    <ul class="footer-contact-list">
-
-                        <li>
-                            <a href="tel:+380981717171" class="footer-text">
-                                +380981717171
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="tel:+380981234567" class="footer-text">
-                                +380981234567
-                            </a>
-                        </li>
-
-                    </ul>
-                </address>
-            </div>
-
-
-            <div class="footer-item">
-                <h2 class="footer-title">Освіта:</h2>
-
-                <p class="footer-text footer-center-text">
-                    Львівський національний університет імені Івана Франка
-                </p>
-            </div>
-
-
-            <div class="footer-item">
-                <h2 class="footer-title">Команда:</h2>
-
-                <ul class="team-list">
-                    <li class="footer-text">Брик Тетяна</li>
-                    <li class="footer-text">Ткач Ольга</li>
-                    <li class="footer-text">Леонтієва Софія</li>
-                    <li class="footer-text">Коблянська Андріана</li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
-
-
     <script>
-        const fortuneCard = document.getElementById('fortuneCard');
+        function calculateCompatibility() {
+            const firstName = document.getElementById("firstName").value.trim();
+            const secondName = document.getElementById("secondName").value.trim();
+            const resultBox = document.getElementById("resultBox");
 
-        if (fortuneCard) {
-            fortuneCard.addEventListener('click', function () {
-                fortuneCard.classList.toggle('is-flipped');
-            });
+            if (firstName === "" || secondName === "") {
+                resultBox.style.display = "block";
+                resultBox.innerHTML = "Введіть два імені";
+                return;
+            }
+
+            let sum = 0;
+            const names = (firstName + secondName).toLowerCase();
+
+            for (let i = 0; i < names.length; i++) {
+                sum += names.charCodeAt(i);
+            }
+
+            const percent = (sum % 51) + 50;
+
+            resultBox.style.display = "block";
+            resultBox.innerHTML = "Ваша сумісність: " + percent + "%";
         }
     </script>
+</body>
+</html>
