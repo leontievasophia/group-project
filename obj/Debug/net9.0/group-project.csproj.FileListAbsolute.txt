@@ -20,7 +20,6 @@ D:\2 курс програмування\с#\навчально обчислюв
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\scopedcss\bundle\group-project.styles.css
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\scopedcss\projectbundle\group-project.bundle.scp.css
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\jwjvvf5kyi-b9sayid5wm.gz
-D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\43k31n2xij-uxk9hhzmif.gz
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\c8v9tnsklt-61n19gt1b8.gz
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\23lbw0q2y8-6nokcza2ac.gz
 D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\7uvs3ekrb0-rgi5nsco3e.gz
@@ -206,3 +205,4 @@ C:\Users\user\Desktop\group-project\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\group-project.genruntimeconfig.cache
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\ref\group-project.dll
 C:\Users\user\Desktop\group-project\obj\Debug\net9.0\compressed\43k31n2xij-g8gh1nqjwd.gz
+D:\2 курс програмування\с#\навчально обчислювальна практика\group-project\obj\Debug\net9.0\compressed\43k31n2xij-g8gh1nqjwd.gz
