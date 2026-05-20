@@ -161,37 +161,45 @@
 
         <img src="/assets/sun.png" class="sun" alt="Сонце">
 
-        <div class="result" id="resultBox">
-            Ваша сумісність: ?
-        </div>
-
+        <div class="result" id="resultBox"></div>
     </main>
 
     <script>
-        function calculateCompatibility() {
-            let firstName = document.getElementById("firstName").value.trim();
-            let secondName = document.getElementById("secondName").value.trim();
-            let resultBox = document.getElementById("resultBox");
+    const firstNameInput = document.getElementById("firstName");
+    const secondNameInput = document.getElementById("secondName");
+    const resultBox = document.getElementById("resultBox");
 
-            if (firstName === "" || secondName === "") {
-                resultBox.innerHTML = "Введіть два імені";
-                return;
-            }
+    function clearResultIfEmpty() {
+        if (firstNameInput.value.trim() === "" || secondNameInput.value.trim() === "") {
+            resultBox.innerHTML = "";
+        }
+    }
 
-            let sum = 0;
-            let names = (firstName + secondName).toLowerCase();
+    function calculateCompatibility() {
+        let firstName = firstNameInput.value.trim();
+        let secondName = secondNameInput.value.trim();
 
-            for (let i = 0; i < names.length; i++) {
-                sum += names.charCodeAt(i);
-            }
-
-            let percent = (sum % 51) + 50;
-
-            resultBox.innerHTML = "Ваша сумісність: " + percent + "%";
+        if (firstName === "" || secondName === "") {
+            resultBox.innerHTML = "Введіть два імені";
+            return;
         }
 
-        document.querySelector(".sun").addEventListener("click", calculateCompatibility);
-    </script>
+        let sum = 0;
+        let names = (firstName + secondName).toLowerCase();
 
+        for (let i = 0; i < names.length; i++) {
+            sum += names.charCodeAt(i);
+        }
+
+        let percent = (sum % 51) + 50;
+
+        resultBox.innerHTML = "Ваша сумісність: " + percent + "%";
+    }
+
+    firstNameInput.addEventListener("input", clearResultIfEmpty);
+    secondNameInput.addEventListener("input", clearResultIfEmpty);
+
+    document.querySelector(".sun").addEventListener("click", calculateCompatibility);
+</script>
 </body>
 </html>
