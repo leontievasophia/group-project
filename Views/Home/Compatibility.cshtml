@@ -1,0 +1,183 @@
+@{
+    ViewData["Title"] = "Сумісність";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сумісність</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url('/assets/background.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            background-color: #d7bf63;
+            padding: 25px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1d1464;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            color: #f6e8b1;
+            margin-top: 70px;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 32px;
+            margin-bottom: 70px;
+        }
+
+        .inputs {
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            margin-bottom: 50px;
+        }
+
+        .input-block {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 28px;
+        }
+
+        input {
+            width: 320px;
+            height: 60px;
+            border: none;
+            background-color: #3b1180;
+            color: white;
+            font-size: 24px;
+            padding-left: 15px;
+        }
+
+        .text {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .sun {
+            width: 250px;
+            margin-bottom: 40px;
+        }
+
+        .result {
+            width: 650px;
+            margin: 0 auto;
+            background-color: #3b1180;
+            border-radius: 30px;
+            padding: 30px;
+            font-size: 42px;
+            font-weight: bold;
+            color: #f6d24a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">MysticHub</a>
+            <a asp-controller="Home" asp-action="Index">Головна</a>
+            <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
+            <a asp-controller="Home" asp-action="Compatibility">Сумісність</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>Дізнайся сумісність ваших імен</h1>
+
+        <div class="subtitle">
+            Введіть два імені та відкрийте, наскільки ви підходите одне одному
+        </div>
+
+        <div class="inputs">
+
+            <div class="input-block">
+                <label>Введіть ім'я</label>
+                <input type="text" id="firstName">
+            </div>
+
+            <div class="input-block">
+                <label>Введіть ім'я</label>
+                <input type="text" id="secondName">
+            </div>
+
+        </div>
+
+        <div class="text">
+            Тисни кнопку і дізнаєшся сумісність
+        </div>
+
+        <img src="/assets/sun.png" class="sun" alt="sun">
+
+        <div class="result" id="resultBox">
+            Ваша сумісність: 50%
+        </div>
+
+    </div>
+
+    <script>
+        function calculateCompatibility() {
+
+            let firstName = document.getElementById("firstName").value;
+            let secondName = document.getElementById("secondName").value;
+
+            let resultBox = document.getElementById("resultBox");
+
+            if (firstName === "" || secondName === "") {
+                resultBox.innerHTML = "Введіть два імені";
+                return;
+            }
+
+            let sum = 0;
+            let names = (firstName + secondName).toLowerCase();
+
+            for (let i = 0; i < names.length; i++) {
+                sum += names.charCodeAt(i);
+            }
+
+            let percent = (sum % 51) + 50;
+
+            resultBox.innerHTML =
+                "Ваша сумісність: " + percent + "%";
+        }
+
+        document.querySelector(".sun")
+            .addEventListener("click", calculateCompatibility);
+    </script>
+
+</body>
+</html>
