@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сумісність</title>
 
+    <link rel="stylesheet" href="/css/styles.css" />
+
     <style>
         body {
             margin: 0;
@@ -17,87 +19,77 @@
             background-image: url('/assets/background.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             font-family: Georgia, serif;
         }
 
-        header {
-            background-color: #d7bf63;
-            padding: 25px 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #1d1464;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .container {
+        .compatibility-main {
             text-align: center;
             color: #f6e8b1;
-            margin-top: 70px;
+            padding-top: 45px;
         }
 
-        h1 {
-            font-size: 64px;
-            margin-bottom: 20px;
+        .compatibility-title {
+            font-size: 52px;
+            margin-bottom: 15px;
         }
 
-        .subtitle {
-            font-size: 32px;
-            margin-bottom: 70px;
+        .compatibility-subtitle {
+            font-size: 24px;
+            margin-bottom: 35px;
         }
 
-        .inputs {
+        .compatibility-inputs {
             display: flex;
             justify-content: center;
-            gap: 120px;
-            margin-bottom: 50px;
-        }
-
-        .input-block {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        label {
-            font-size: 28px;
-        }
-
-        input {
-            width: 320px;
-            height: 60px;
-            border: none;
-            background-color: #3b1180;
-            color: white;
-            font-size: 24px;
-            padding-left: 15px;
-        }
-
-        .text {
-            font-size: 28px;
+            gap: 90px;
             margin-bottom: 30px;
         }
 
+        .compatibility-input-block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .compatibility-input-block label {
+            font-size: 24px;
+        }
+
+        .compatibility-input-block input {
+            width: 300px;
+            height: 50px;
+            border: none;
+            background-color: #3b1180;
+            color: white;
+            font-size: 22px;
+            padding-left: 15px;
+            outline: none;
+        }
+
+        .compatibility-text {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
         .sun {
-            width: 250px;
-            margin-bottom: 40px;
+    width: 170px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+        .sun:hover {
+            transform: scale(1.08);
         }
 
         .result {
-            width: 650px;
+            width: 480px;
             margin: 0 auto;
             background-color: #3b1180;
-            border-radius: 30px;
-            padding: 30px;
-            font-size: 42px;
+            border-radius: 25px;
+            padding: 20px;
+            font-size: 32px;
             font-weight: bold;
             color: #f6d24a;
         }
@@ -105,56 +97,80 @@
 </head>
 
 <body>
+    <header class="header-page">
+        <div class="container header-container">
 
-    <header>
-        <nav>
-            <a asp-controller="Home" asp-action="Index">MysticHub</a>
-            <a asp-controller="Home" asp-action="Index">Головна</a>
-            <a asp-controller="Home" asp-action="Horoscope">Гороскоп</a>
-            <a asp-controller="Home" asp-action="Compatibility">Сумісність</a>
-        </nav>
+            <a asp-controller="Home" asp-action="Index" class="logo">
+                MysticHub
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+
+                    <li>
+                        <a asp-controller="Home" asp-action="Index" class="nav-link">
+                            Головна
+                        </a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="Home" asp-action="Horoscope" class="nav-link">
+                            Гороскоп
+                        </a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="Home" asp-action="Compatibility" class="nav-link current">
+                            Сумісність
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <div class="container">
+    <main class="compatibility-main">
 
-        <h1>Дізнайся сумісність ваших імен</h1>
+        <h1 class="compatibility-title">
+            Дізнайся сумісність ваших імен
+        </h1>
 
-        <div class="subtitle">
+        <p class="compatibility-subtitle">
             Введіть два імені та відкрийте, наскільки ви підходите одне одному
-        </div>
+        </p>
 
-        <div class="inputs">
+        <div class="compatibility-inputs">
 
-            <div class="input-block">
+            <div class="compatibility-input-block">
                 <label>Введіть ім'я</label>
                 <input type="text" id="firstName">
             </div>
 
-            <div class="input-block">
+            <div class="compatibility-input-block">
                 <label>Введіть ім'я</label>
                 <input type="text" id="secondName">
             </div>
 
         </div>
 
-        <div class="text">
-            Тисни кнопку і дізнаєшся сумісність
-        </div>
+        <p class="compatibility-text">
+            Тисни на сонце і дізнаєшся сумісність
+        </p>
 
-        <img src="/assets/sun.png" class="sun" alt="sun">
+        <img src="/assets/sun.png" class="sun" alt="Сонце">
 
         <div class="result" id="resultBox">
-            Ваша сумісність: 50%
+            Ваша сумісність: ?
         </div>
 
-    </div>
+    </main>
 
     <script>
         function calculateCompatibility() {
-
-            let firstName = document.getElementById("firstName").value;
-            let secondName = document.getElementById("secondName").value;
-
+            let firstName = document.getElementById("firstName").value.trim();
+            let secondName = document.getElementById("secondName").value.trim();
             let resultBox = document.getElementById("resultBox");
 
             if (firstName === "" || secondName === "") {
@@ -171,12 +187,10 @@
 
             let percent = (sum % 51) + 50;
 
-            resultBox.innerHTML =
-                "Ваша сумісність: " + percent + "%";
+            resultBox.innerHTML = "Ваша сумісність: " + percent + "%";
         }
 
-        document.querySelector(".sun")
-            .addEventListener("click", calculateCompatibility);
+        document.querySelector(".sun").addEventListener("click", calculateCompatibility);
     </script>
 
 </body>
